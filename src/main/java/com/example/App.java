@@ -41,6 +41,7 @@ public class App {
             updateStmt.executeUpdate();
 
             // DELETE operation in MySQL
+            //Testing
             String deleteSQL = "DELETE FROM users WHERE name = ?";
             PreparedStatement deleteStmt = mysqlConn.prepareStatement(deleteSQL);
             deleteStmt.setString(1, "John Doe");
